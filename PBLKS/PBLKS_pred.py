@@ -469,12 +469,18 @@ def predict_in_batch(bacteria_folder: str,
         bacteria_path = os.path.join(bacteria_folder, bacteria_file)
         if os.path.isdir(bacteria_path):
             continue
+        # ignore .DS_Store files in mac
+        if bacteria_file.count('.DS_Store') != 0:
+            continue
 
         crt_bac_results = []
         for phage_file in phage_file_names:
             # if nested folder, ignore
             phage_path = os.path.join(phage_folder, phage_file)
             if os.path.isdir(phage_file):
+                continue
+            # ignore .DS_Store files in mac
+            if phage_file.count('.DS_Store') != 0:
                 continue
             descriptor = get_descriptor(bacteria_path, phage_path)
             proba = model.predict_proba(descriptor)[0][1]
