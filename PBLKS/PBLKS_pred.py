@@ -349,8 +349,11 @@ def _batch_ouput2stdout(results: dict[str, list[BacteriaPairResult]]):
 
 def _make_output_files(output_dir: str):
     '''
-    make sure the output file does not already exist
+    make sure the output file does not already exist,
     if already exist, add _ after original name
+    Returns:
+        csv_out: file descriptor pointing to the output csv
+        txt_out:    file descriptor pointing to the output txt
     '''
     csv_output_name = 'PBLKS_result'
     csv_path = os.path.join(output_dir, csv_output_name + ".csv")
@@ -369,7 +372,7 @@ def _make_output_files(output_dir: str):
 
 def _make_csv_output(results: dict[str, list[BacteriaPairResult]]) -> dict[str, str]:
     '''
-    reorgnize result to csv output form 
+    reorgnize result into csv output form 
     result would be orgnized in {phage file name}: {results(in bacteria line's order)}
     '''
     bac_name0 = list(results.items())[0][0]
@@ -449,7 +452,7 @@ def predict_in_batch(bacteria_folder: str,
         use_xgb: use XGBoost based model(randomforest by default)
         output_dir: output result to given directory(stdout if None)
     Raises:
-        FileNotFoundError: if at least one of the sequence file you entered does not exist
+        FileNotFoundError: if at least one of the sequence file entered does not exist
         InputFileFormatError: if the content of the sequence file is not orgnized in fasta format
     '''
     if not (os.path.exists(bacteria_folder) and os.path.exists(phage_folder)):
@@ -457,7 +460,7 @@ def predict_in_batch(bacteria_folder: str,
             'at least one of the sequence folder you entered does not exist :(')
     if output_dir is not None:
         if not os.path.isdir(output_dir):
-            raise DirectoryError("output includes 2 files, a folder is needed")
+            raise DirectoryError("output includes 2 files, a folder instead of a file is needed")
 
     phage_file_names = os.listdir(phage_folder)
     bacteria_file_names = os.listdir(bacteria_folder)
