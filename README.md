@@ -20,7 +20,7 @@ This is the official code for our paper "PB-LKS: a python package for predicting
       cd {your_path_to_PBLKS}
       ```
 3. Run the following codes in your terminal
-   ```
+   ```shell
    conda create -n PB-LKS python=3.10
    conda deactivate (if base environment is activated)
    conda activate PB-LKS
@@ -86,7 +86,7 @@ PBLKS.predict_in_batch(bac_folder, phage_folder, output_dir=None)
 # get decision path
 decision_path = PBLKS.show_decision_path(bacteria_path, phage_path)
 # get top 10 important features
-# result is prgnized in dict like: {kmer: importance}
+# result is orgnized in dict like: {kmer: importance}
 features = PBLKS.show_feature_importance(top_cnt=10)
 ```
 
@@ -99,7 +99,7 @@ Users can run following command in termianl
 ```bash
 python make_tree_plots.py
 ```
-It'll create a detailed visualization of every decision trees in /PBLKS/Trees.
+This'll create a detailed visualization of every decision trees in /PBLKS/Trees.
 
 ## other models
 an xgboost based model is also included in `/models`.
