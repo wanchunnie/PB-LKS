@@ -99,10 +99,10 @@ Users can run following command in termianl
 ```bash
 python make_tree_plots.py
 ```
-This'll create a detailed visualization of every decision trees into `/PBLKS/Trees`.
+This'll create a detailed visualization of every decision tree into `/PBLKS/Trees`.
 
 ## other models
-an xgboost based model is also included in `/models`.
+An xgboost based model is also included in `/models`.
 
 can be used by adding `-xgb` argument in CLI or adding parameter `use_xgboost=True` when calling methods in our package 
 
