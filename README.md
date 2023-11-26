@@ -41,7 +41,7 @@ A command line interface is implemented and can be used by running following com
    python PB-LKS.py -e
    ```
 other detailed arguments and their usages are listed as follows
-```bash
+```Shell
 usage: python PB-LKS.py [-h] [-p PHAGE] [-b BAC] [-e] [-xgb] [-fea] [-ba] [-o OUTPUT] [-d]
 
 options:
