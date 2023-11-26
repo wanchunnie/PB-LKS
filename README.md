@@ -24,7 +24,7 @@ This is the official code for our paper "PB-LKS: a python package for predicting
    conda create -n PB-LKS python=3.10
    conda deactivate (if base environment is activated)
    conda activate PB-LKS
-   pip install -r requirments.txt
+   pip install -r requirements.txt
    ``` 
 
 ## How to use
