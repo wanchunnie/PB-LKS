@@ -19,7 +19,7 @@ This is the official code for our paper "PB-LKS: a python package for predicting
       ```bash
       cd {your_path_to_PBLKS}
       ```
-3. Run the following codes in your terminal
+3. Run following codes in your terminal
    ```shell
    conda create -n PB-LKS python=3.10
    conda deactivate (if base environment is activated)
@@ -61,8 +61,7 @@ options:
 
 ### python package
 To make it more convenient for researchers and developers to use our model in more personalized tasks, a python package is also implemented. 
-
-
+following functions are available
 example code:
 ```python
 import PBLKS
@@ -91,15 +90,15 @@ features = PBLKS.show_feature_importance(top_cnt=10)
 ```
 
 ## decision path visualization
-Several interfaces to visualize how our model make decisions are implemented. 
+Interpertability is a key feature in decision tree based alogrithms, several interfaces to visualize how our model make decisions are thus implemented. 
 
-Except calling   `-d` or `PBLKS.show_decision_path`, we implemented a script to visualize decision trees in our model.
+Except calling  `-d` or `PBLKS.show_decision_path` to show decision path with 01, we implemented a script to visualize decision trees in our model.
 
 Users can run following command in termianl
 ```bash
 python make_tree_plots.py
 ```
-This'll create a detailed visualization of every decision tree into `/PBLKS/Trees`.
+This'll create a detailed visualization of every decision tree into `/PBLKS/Trees`, providing a more straightforward way to visualize decision.
 
 ## other models
 An xgboost based model is also included in `/models`.
