@@ -551,7 +551,7 @@ Descriptors are extracted and tabulated as follows.
 ╘═════╧═══════════╧═════════╛
 ```
 visualized decision tree is shown here. 
-![pic](./PBLKS/Trees/example.png)
+![pic](example.png)
 
 
 Here, according to descripotr and visualized tree, we show that the decision path of this tree is:
