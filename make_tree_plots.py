@@ -20,3 +20,4 @@ for i in range(len(clf.estimators_)):
                    filled=True)
     fig.savefig('./PBLKS/Trees/decision_tree_' +
                 str(i) + '_visualization.png')
+    plt.close(fig)
