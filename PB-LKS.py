@@ -2,7 +2,6 @@ import os
 import PBLKS
 import argparse
 from colorama import init, Fore
-from tabulate import tabulate
 
 # CLI tool of PBLKS
 
