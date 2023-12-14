@@ -291,7 +291,6 @@ def show_decision_path(bac_path: str,
     print('note that tree nodes are numbered by pre-order traversal(root-left-right)')
     paths = []
     indicator = np.array(indicator.todense())[0]
-    print(indicator.shape)
     for i in range(n_nodes_ptr.shape[0] - 1):
         paths.append(indicator[n_nodes_ptr[i]: n_nodes_ptr[i + 1]])
     return paths
