@@ -20,7 +20,7 @@ In decision trees, the Gini impurity of a particular node refers to the measure 
 ### value
 Orgnized in form like `value = [not_host_number, is_host_number]`. Indicating in our training dataset used to train this tree, `{not_host_number}` negative samples are left, `{is_host_number}` positive samples are left.
 
-For instance, `value = [16, 5]` means when this node is reached, 16 negative samples(bacteria and phage interacts) are left, 5 positive samples(does not interact).
+For instance, `value = [16, 5]` means when this node is reached, 16 negative samples(bacteria and phage interacts), 5 positive samples(does not interact) are left.
 
 Traversing the tree, the samples are split and as a result, the value array reaching each node changes. 
 
