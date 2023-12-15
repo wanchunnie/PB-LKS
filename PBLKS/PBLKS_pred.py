@@ -306,7 +306,8 @@ def _orgnize_features(important_features: List[Important_feature]) -> dict[str, 
 
 # used to save results of a bacteria and corresponding phage by model
 BacteriaPairResult = namedtuple(
-    "PairResult", ['phage_file', 'result', 'probability', 'features'])
+    "PairResult", ['phage_file', 'result', 'probability', 'features']
+)
 
 
 def _batch_ouput2stdout(results: dict[str, list[BacteriaPairResult]]):
