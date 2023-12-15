@@ -2,7 +2,7 @@
 
 Run `python make_tree_plots.py` in terminal to create visualization of trees in our RandomForest model
 
-## How cna I interpret these trees?
+## How can I interpret these trees?
 Nodes in decision trees have following properties:
 ### criterion (Important):
 Orgnized in form like `{feature_name} <= {threshold}` 
@@ -557,7 +557,7 @@ visualized decision tree is shown here.
 Here, according to descripotr and visualized tree, we show that the decision path of this tree is:
 
 ```
-CTTT = -13 -> go right
+CTTT(root node) = -13 -> go right
 TGCC = -28 -> go right
 ATTA = -6 -> go right
 CTAG = 8 -> go left
