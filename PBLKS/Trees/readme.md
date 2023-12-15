@@ -1,4 +1,4 @@
- This folder saves visualized decision trees.
+This folder saves visualized decision trees.
 
 Run `python make_tree_plots.py` in terminal to create visualization of trees in our RandomForest model
 
@@ -22,15 +22,15 @@ Orgnized in form like `value = [not_host_number, is_host_number]`. Indicating in
 
 For instance, `value = [16, 5]` means when this node is reached, 16 negative samples(bacteria and phage interacts) are left, 5 positive samples(does not interact).
 
- Traversing the tree, the samples are split and as a result, the value array reaching each node changes. 
+Traversing the tree, the samples are split and as a result, the value array reaching each node changes. 
 
 ### class
-Class type of this node, given in every node but only useful in leaf nodes.
+Class type of this node, provided in every node but only useful in leaf nodes.
 
-This is actually decided by when reaching this node, which class has larger number of samples.
+This is actually decided by when reaching this node, which class has larger number of samples. The class of a leaf node indicates the prediction of this decision tree when it is reached in predicting.
 
 ## Example
-Lets use files in `./Example` as example input and visualized example tree(decision tree 0 in RF) to illustrate how decision is made.
+Let's use files in `./Example` as example input and visualized example tree(decision tree 0 in RF) to illustrate how decision is made.
 
 Descriptors are extracted and tabulated as follows.
 ```
