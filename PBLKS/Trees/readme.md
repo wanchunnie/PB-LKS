@@ -554,7 +554,7 @@ visualized decision tree is shown here.
 ![pic](example.png)
 
 
-Here, according to descripotr and visualized tree, we show that the decision path of this tree is:
+Here, according to descriptor and visualized tree, we show that the decision path of this tree is:
 
 ```
 CTTT(root node) = -13 -> go right
@@ -577,8 +577,7 @@ CGAG = 28 -> go right
 => reached leaf node 
 ```
 Unfortunately, value of this node is `value = [7, 7]`, gini entrophy is 0.5. 
-
-Class is labeled as 0 here. 
+(Class is here labeled as 0 here owning to setting). 
 
 ### binary arrary form
 If we order the nodes in tree by pre-order traversal(visit-left-right), and use 0/1 to indicate whether the node with corresponding index is passed when making decision, we will get a binary arrary like this:
