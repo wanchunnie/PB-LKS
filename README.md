@@ -102,7 +102,7 @@ python make_tree_plots.py
 This'll create a detailed visualization of every decision tree into `/PBLKS/Trees`, providing a more straightforward way to visualize decision.
 
 ## other models
-An xgboost based model is also included in `/models`.
+A xgboost based model is also included in `/models`.
 
 can be used by adding `-xgb` argument in CLI or adding parameter `use_xgboost=True` when calling methods in our package 
 
