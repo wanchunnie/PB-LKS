@@ -579,6 +579,9 @@ CGAG = 28 -> go right
 Unfortunately, value of this node is `value = [7, 7]`, gini entrophy is 0.5. 
 (Class is here labeled as 0 here owning to setting). 
 
+In normal situation, value[0]'ll be unequal to value[1]. Then the prediction of our model'll be the category with larger number.
+For example, `value=[10,1]` indicates 0(not host), 'value=[2,17]' indicates 1(host).
+
 ### binary arrary form
 If we order the nodes in tree by pre-order traversal(visit-left-right), and use 0/1 to indicate whether the node with corresponding index is passed when making decision, we will get a binary arrary like this:
 ```
