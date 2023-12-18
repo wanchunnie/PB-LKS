@@ -1,6 +1,6 @@
 # PB-LKS
 
-This is the official code for our paper "PB-LKS: a python package for predicting Phage-Bacteria interaction through Local K-mer Strategy"
+This is the official code for our paper "PB-LKS: a python package for predicting **P**hage-**B**acteria interaction through **L**ocal **K**-mer **S**trategy"
 ```
  +--------------------------------------------+
  | |---\  |----\       |       |  /   /----\  |
